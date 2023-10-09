@@ -6,6 +6,13 @@ module.exports = {
   "extends": [
     "plugin:vue/essential",
     "eslint:recommended",
-    "@vue/eslint-config-prettier"
-  ]
+    "@vue/eslint-config-prettier",
+    "prettier"
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+  },
+  rules: {
+    'vue/multi-word-component-names': 'off',
+  },
 }
